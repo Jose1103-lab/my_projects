@@ -1,2 +1,2 @@
 # my_projects
-Here is all my trajectory through programming world
+Here is all my trajectory through the programming world
