@@ -1,7 +1,23 @@
+body{
+    background-color: rgb(255, 0, 0, 30%);
+
+}
+
+/* this is duplicated */
+.bar{
+    display: inline-block;
+    background-color: rgb(140, 81, 81);
+    color: rgb(255, 255, 255, 20%);
+    font-size: 16px;
+    padding: 1%;
+    position: center;
+}
+
+
 /*{
     margin-top: 0;
     padding: 0;
-    background-color: black;
+    box-sizing: border-box ;
 }
 
 #headers{
@@ -51,4 +67,5 @@
     color: black;
     background-color: rgb(240, 166, 166);
 }*/
+
 
