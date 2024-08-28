@@ -1,26 +1,68 @@
-body{
-    background-color: rgb(255, 0, 0, 30%);
-
-}
-
-/* this is duplicated */
-.bar{
-    display: inline-block;
-    background-color: rgb(140, 81, 81);
-    color: rgb(255, 255, 255, 20%);
-    font-size: 16px;
-    padding: 1%;
-    position: center;
-}
-
-
-/*{
+*{
     margin-top: 0;
     padding: 0;
     box-sizing: border-box ;
 }
 
-#headers{
+body{
+    background-color: rgb(221, 150, 150);
+}
+
+/* this is duplicated */
+.bar{
+    background-color: rgb(255, 92, 92);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    max-height: px;
+    text-align:center;
+}
+
+.container{
+    border: 1px solid red;
+    width: 100px;
+    display: inline-block;
+    margin: 0;
+    padding: 2px;
+}
+
+/* esta seccion ha de ser añadida al proyecto original para la 
+parte de toolbar */
+.row{
+    background-color: rgb(247, 191, 191);
+    display: none;
+    width: fit-content;
+    padding-top: 12px;
+    text-align:left;
+    background-color: bisque;
+    /* height: fit-content;
+    width: fit-content; */
+}
+.container:hover{
+    cursor: pointer;
+    background-color: chartreuse;
+    .row{
+        display: flex;
+        position:absolute ;
+        top: 20px;
+        margin: 3px 0;
+        padding-right: 15px;
+        cursor: pointer;    
+    }
+    li{
+        padding-top: 5px;
+    }
+    a:hover{
+        text-decoration: none;        
+        
+    }
+}
+/* -------------------hasta aqui------------- */
+
+li{
+    list-style: none;
+}
+
+/* #headers{
     border-color: white;
     color: white; 
     text-align: center;
@@ -29,7 +71,7 @@ body{
     margin-top: 15px;
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 255);
-} */
+}  */
 
 /* 
 #bar{
