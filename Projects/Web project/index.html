@@ -1,55 +1,82 @@
-<!-- This section is built with bootstrap -->
- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inicial-scale=1">
-    <title>Virtual Office</title>    
-    <link rel="stylesheet" href="Style/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Style/pstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing code</title>
+    <link rel="stylesheet" href="Style/main.css">
 </head>
-
 <body>
-    <div id="Page_content" class="bar">
-        <div class="container">
-            <a href="index.html"> Home</a>
-        </div>
-
-        <div class="container">Activity 
-            <div class="row">
-                <ul>
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">Degree status</a></li>
-                </ul>
+<div>
+    <div id="header_container">
+        <header id="page_header">
+            <div> 
+                <button id="display_menu" title="Display Menu">
+                    <svg role="presentation" viewbox="0 0 24 24" width="10"
+                    height="15" fill="currentColor" style="color: white;">
+                    </svg>
+                </button>
+                <div id="title">
+                    <h2>Este es el Testing Website</h2>
+                </div>
+            </div>    
+            <div class="search-bar-container">    
+                <input type="text" name="search" placeholder="Search" id="search-bar" >
+                <button id="search-opt" type="button" title="Search">
+                    <img  src="https://images.vexels.com/media/users/3/143356/isolated/preview/64e14fe0195557e3f18ea3becba3169b-buscar-lupa.png" 
+                    alt="Search" class="boton">
+                    <!-- Aqui va una lupa -->
+                </button>
             </div>
+        </header>
+        <div class="tool_var"> 
+            <a href="#1" class="a_var">About me
+            </a>
+            <a href="index.html" class="a_var">Home</a>
+            <a href="#2" class="a_var">Activity</a>
+                <div class="box" >
+                    <ul>
+                        <li class="items_box"></li>
+                        <li class="items_box"></li>
+                        <li class="items_box"></li>
+                        <li class="items_box"></li>
+                    </ul>
+                </div>
+            <a href="#3" class="a_var">Resources</a>
+                <div class="box" >
+                    <ul>
+                        <li class="items_box"></li>
+                        <li class="items_box"></li>
+                        <li class="items_box"></li>
+                        <li class="items_box"></li>
+                    </ul>
+                </div>
+            <a href="#4" class="a_var">Contact us</a>
         </div>
-        <div class="container">Quick Links 
-            <div class="row">
-                <ul>
-                   <li title="Projects vault"><a href="#">Projects</a></li>
-                   <li><a href="#">Materials</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">Contact us
-            <div class="row">
-                <ul>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Send email</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
-            </div>
-        </div> 
-        
-    
-
-
     </div>
 
 
-<script src="Scripts/js/jquery-3.7.1.min.js"></script>
-<script src="Scripts/js/bootstrap.min.js"></script>
-<script src="Scripts/pengine.js"></script>
+    <div id="main_content">
+        <div id="main_feed">
+            <section class="inside">
+            En este section tendremos una parte para una main feed
+            </section>  
+        </div>
+        
+        <div id="sided_content">
+            <header id="sec_head">Quick Access</header>
+            <section class="inside">
+                En esta seccion tendremos un lugar para accesos rapidos
+            </section>
+         </div>
+        </div>
+        
+    </div>
+    <div id="bottom_side">
+        <footer>
+            <p>Gracias por estar esta noche aqui</p>
+        </footer>
+    </div> 
 </body>
 </html>
+

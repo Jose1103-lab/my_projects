@@ -6,6 +6,7 @@
 
 body{
     background-color: rgb(221, 150, 150);
+    
 }
 
 /* this is duplicated */
@@ -13,7 +14,8 @@ body{
     background-color: rgb(255, 92, 92);
     color: rgb(0, 0, 0);
     font-size: 16px;
-    max-height: px;
+    height:25px ; 
+    max-height: 25px;
     text-align:center;
 }
 
@@ -21,7 +23,7 @@ body{
     border: 1px solid red;
     width: 100px;
     display: inline-block;
-    margin: 0;
+    margin: 0 3%;
     padding: 2px;
 }
 
@@ -34,33 +36,66 @@ parte de toolbar */
     padding-top: 12px;
     text-align:left;
     background-color: bisque;
-    /* height: fit-content;
-    width: fit-content; */
 }
 .container:hover{
+    animation: bobble 1s infinite;   
     cursor: pointer;
     background-color: chartreuse;
+    
     .row{
         display: flex;
         position:absolute ;
         top: 20px;
         margin: 3px 0;
         padding-right: 15px;
-        cursor: pointer;    
-    }
-    li{
-        padding-top: 5px;
-    }
-    a:hover{
-        text-decoration: none;        
+        cursor: pointer;
         
     }
+      
+    li{
+        padding-top: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a:hover{
+        text-decoration: none;  
+        color: black;      
+    }
+    
 }
 /* -------------------hasta aqui------------- */
+@keyframes bobble {
+    0% {
+        /* transform: translateY(10px); */
+    }    
+    50%{    
+        width: 125px;
+        font-size: larger;
+    }
+    100% {
+        /* transform: translateY(10px); */
+    }
+}
 
 li{
     list-style: none;
 }
+
+img{
+    animation: bobble 1s 2;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    width: 250px;
+    height: 250px;
+    border: 12px solid rgb(255, 64, 64);
+    border-radius: 25%;
+    transition: ;
+}
+
+
+
 
 /* #headers{
     border-color: white;
