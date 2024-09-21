@@ -1,6 +1,7 @@
 /* Desde aqui el header and the body general layout*/
 *{
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body{
@@ -161,9 +162,7 @@ h2{
     position: relative;
     top: 100px;
     padding-bottom: 15px;
-    margin-bottom: 15pxd;
-    border: 10px solid red;
-    
+    z-index: indez -1;    
 }
 
 #main_feed{
@@ -233,6 +232,5 @@ h2{
     background-color: black;
     color: white;
     /* display: none; */
-    border: 10px solid red;
 
 }
