@@ -5,7 +5,19 @@
 
 body{
     margin: 0px;
+    padding: 0;
     background-color: #ffffff;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    /* display: none; */
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f100; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(154, 222, 240);
+    border-radius: 10px;
 }
 
 #header_container{     
@@ -155,4 +167,26 @@ body{
 
 .inside{
     padding: 5px;
+}
+
+#bottom_side {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    background-color: rgba(46, 224, 230, 0.116);
+    
+    /* text */
+    color: rgb(63, 57, 3);
+    text-shadow: #000000 0px 0px 10px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#links{
+    border: 2px solid #000000 ;
+    width: 50%;
+    height: 55px;
+    display: grid;
+    overflow: auto;
 }
