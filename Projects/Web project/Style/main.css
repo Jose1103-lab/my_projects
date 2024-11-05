@@ -1,4 +1,11 @@
 /* Desde aqui el header and the body general layout*/
+:root{
+    --bg-color1: #ffffff;
+    --bg-color1-transp: #ffffff69;
+    --bg-color2: #ffe388;
+    --bg-color2-transp: #ffe38894;
+}
+
 *{
     box-sizing:border-box;
 }
@@ -10,18 +17,18 @@ body{
 }
 ::-webkit-scrollbar {
     width: 10px;
-    /* display: none; */
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f100; 
 }
+
 ::-webkit-scrollbar-thumb {
-    background: rgb(154, 222, 240);
-    border-radius: 10px;
+    background: var(--bg-color2);
+    border-radius: 50px;   
 }
 
 #header_container{     
-    /* border: 10px solid gray; testing */
     position: sticky;
     top: 0px;
     height:120px ;
@@ -29,9 +36,6 @@ body{
 }
 
 #page_header{
-    /* padding: 1em; */
-    /* margin-top: 0px; */
-    /* border: 2px solid rgb(0, 0, 0); testing */
     background-color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 0, 0);
@@ -42,7 +46,6 @@ body{
 }
 
 .tool_var {
-    /* border: 2px solid rgb(131, 78, 78);  testing   */
     padding: 0px;
     margin: 0px;
     position:relative;
@@ -56,7 +59,7 @@ body{
 }
 
 .a_var{
-    /* border:2px solid red; testing */
+
     position: relative;
     top: -15px;
     padding:5px 15px;
@@ -69,12 +72,9 @@ body{
     margin: 0;
     border-radius: 50px;
     color:#8a30e2;
-    /* border:1px  solid #8a30e2; */
 }
 
 #header_title{
-    /* display: inline-block; */
-    /* border: 2px solid gray;  */
     position: absolute;
     left: 10px;
     top: -18px;
@@ -118,11 +118,7 @@ body{
     }
 }
 
-
 #main_feed{
-    /* display: none; temporal */
-    /* padding: 5px; */
-    /* float: left; */
     height: 100em;
     width: 60%;
     margin: 5px;
@@ -137,12 +133,10 @@ body{
 
 #sided_content{
     display: none; /*temporal*/
-    
+
     height: 200px;
     width: 35%;
     margin: 5px;
-    /* padding: 3px; */
-    /* float: right; */
     position: relative;
     right: -63%;
     top: -1595px;
@@ -154,8 +148,6 @@ body{
 }
 
 #sec_head{
-    /* position: relative;
-    left:1px; */
     height: 25px;
     background-color: gray;
     color: black;
