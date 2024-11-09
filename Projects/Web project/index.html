@@ -8,60 +8,107 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/prob-1.png">
+    <script src="Scripts/pengine.js" defer></script>
 
 </head>
 <body>
-<div>
+    <!-- This contains the footer content using a division with grid-->
     <div id="header_container">
         <header id="page_header">
             <a href="index.html" >
-                <H1 id="header_title" class="kalnia-glaze" title="Home">_BioLabs</H1>
-            </a>  
+                <H1 class="kalnia-glaze logo" title="Home">_BioLabs</H1>
+            </a>
+
             <button id="display_menu">
                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8a30e2"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </button>
-            <div class="tool_var"> 
-                <b>
-                <a href="index.html" class="a_var">Home</a>
-                <a href="#1" class="a_var">Section 2</a>
-                <a href="#2" class="a_var">Section 3</a>
-                <a href="#3" class="a_var">Section 4</a>
-                <a href="#4" class="a_var">Section 5</a>
-            </b>
-            </div>
+            
+            <nav class="tool_var"> 
+                <a href="index.html">Home</a>
+                <a href="#1">Projects</a>
+                <a href="#2">About me</a>
+                <a href="#3">Contact me</a>
+            </nav>
         </header>
     </div>
 
-
+    <!-- This contains the overlaping image -->
+    <div class="home-img">
+        <img src="img/main-ground.jpg" alt="intro">
+        <div class="home-text ">
+            <h1>Welcome to my website</h1>
+            <br><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Do Lorem, ipsum dolor sit 
+                amet consectetur adipisicing elit. Molestiae nisi sed veritatis. Dignissimos 
+                necessitatibus nesciunt quam iste molestiae sed labore odit laudantium, ipsam modi 
+                ab debitis unde vitae nemo. Ipsa.</p>
+        </div>
+    </div>
+    
+   <!-- This contains the main content using a division with grid-->
     <div id="main_content">
-        <div id="main_feed">
-            <section class="inside">
-            En este section tendremos una parte para una main feed
-            </section>  
+
+        <div class="main_feed">
+            
+            <div class="mn-inside">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, necessitatibus officiis nesciunt corrupti tempore sit alias deleniti optio animi
+            vero! Voluptates numquam cupiditate cumque amet modi enim quos corrupti molestias, veritatis dolorem, eius soluta delectus adipisci aspernatur, 
+            vel sint illum non! Debitis voluptatum accusantium, doloremque soluta minima labore deserunt perspiciatis.
+            </div>  
         </div>
         
-        <div id="sided_content">
-            <header id="sec_head">Quick Access</header>
-            <section class="inside">
-                En esta seccion tendremos un lugar para accesos rapidos
-            </section>
+        <div id="sided_content">  <!-- For all the aside's content -->
+            <div class="inside">
+                <img src="img/placeholder.png" alt="item">
+                <div class="captions">
+                    Lorem ipsum, dolor sit amet consectetur e, tempora eaque! Quam, praesentium possimus!
+                </div>
+            </div>
+            <div class="inside">
+                <img src="img/placeholder.png" alt="item">
+                <div class="captions">
+                    Lorem ipsum, dolor sit amet consectetur e, tempora eaque! Quam, praesentium possimus!
+                </div>
+            </div>
+            <div class="inside">
+                <img src="img/placeholder.png" alt="item">
+                <div class="captions">
+                    Lorem ipsum, dolor sit amet erferimilique, tempora eaque! Quam, praesentium possimus!
+                </div>
+            </div>
+
+
+
+
          </div>
     </div>
 
-    <div id="bottom_side">
-        <footer>
-            <div id="links">
-                <a href="#header_container">Home</a>
-                <a href="#">Sect 2</a>
-                <a href="#">Sect 3</a>
-                <a href="#">Sect 4</a>
-                <a href="#">Sect 5</a>
-                <a href="#">Sect 6</a>
-                <a href="1">Sect 7</a>
-            </div>
-
-        </footer>
+   <!-- This contains the footer content using a division with grid-->
+    <div id="footer-container"> 
+                <ul class="quick-links intern">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Contact me</a></li>
+                </ul>
+                <ul class="quick-links extern">
+                    <li><a href="">dcbcvb</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Contact me</a></li>
+                </ul>
+                <nav class="social-links">
+                    <!-- add some icons for social media -->
+                    <a href=""><img src="" alt="linkedIn"></a>
+                    <a href=""><img src="" alt="instagram"></a>
+                    <a href=""><img src="" alt="Youtube"></a>
+                    <a href=""><img src="" alt="Twitch"></a>
+                    <a href=""><img src="" alt="GitHub"></a>
+                    
+                </nav>
+                <p class="copy">Copyright &copy; 2024 <a href="">BioLabs</a> <br>All rights reserved</p>
     </div>
-</div>
+
 </body>
 </html>
