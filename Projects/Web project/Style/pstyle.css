@@ -1,0 +1,148 @@
+*{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: rgb(221, 150, 150);
+    
+}
+
+/* this is duplicated */
+.bar{
+    background-color: rgb(255, 92, 92);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    height:25px ; 
+    max-height: 25px;
+    text-align:center;
+}
+
+.container{
+    border: 1px solid red;
+    width: 100px;
+    display: inline-block;
+    /* margin: 0 3%; */
+    padding: 2px;
+}
+
+/* esta seccion ha de ser añadida al proyecto original para la 
+parte de toolbar */
+.row{
+    background-color: rgb(247, 191, 191);
+    display: none;
+    width: fit-content;
+    padding-top: 12px;
+    text-align:left;
+    background-color: bisque;
+}
+.container:hover{
+    animation: bobble 1s infinite;   
+    cursor: pointer;
+    background-color: chartreuse;
+    
+    .row{
+        display: flex;
+        position:absolute ;
+        top: 20px;
+        margin: 3px 0;
+        padding-right: 15px;
+        cursor: pointer;
+        
+    }
+      
+    li{
+        padding-top: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    a:hover{
+        text-decoration: none;  
+        color: black;      
+    }
+    
+}
+/* -------------------hasta aqui------------- */
+@keyframes bobble {
+    0% {
+        /* transform: translateY(10px); */
+    }    
+    50%{    
+        width: 125px;
+        font-size: larger;
+    }
+    100% {
+        /* transform: translateY(10px); */
+    }
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    animation: bobble 1s 2;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    width: 250px;
+    height: 250px;
+    border: 12px solid rgb(255, 64, 64);
+    border-radius: 25%;
+    /* transition: ; */
+}
+
+
+
+
+/* #headers{
+    border-color: white;
+    color: white; 
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 75%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 255);
+}  */
+
+/* 
+#bar{
+   // display: inline-table;
+    background-color: rgb(64, 64, 64);
+    color: rgb(255, 255, 255);
+    font-size: 90%;
+    padding: 1%;
+    position: center;
+    margin-top: 30px;
+    margin-left: 13%;
+}
+.lindel:hover{
+    //position: static;
+    margin-right: 2%;
+    .drop_down1{
+        display:inline-block;
+        padding: 0px;
+        margin-top:50px;
+        font-size: 70%;
+        color: rgb(255, 255, 255);
+        background-color: rgb(64, 64, 64);
+    } 
+}
+
+.drop_down1{
+    display: none;
+} */
+
+
+
+/*.drop_down1:hover{
+    display-listitem: inline;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(240, 166, 166);
+}*/
+
+

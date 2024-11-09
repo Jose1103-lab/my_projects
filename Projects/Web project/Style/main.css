@@ -83,7 +83,7 @@ a{
     width: fit-content;
 }
 
-#display_menu{
+#display_menu, .box{
     display: none;
 }
 @media (max-width:850px){
@@ -164,6 +164,7 @@ a{
     #sided_content{
         display: none;
     }
+
     #main_feed{
         /* grid-column:1/4; */
         margin: 10px 5px;
