@@ -174,7 +174,7 @@ a{
 .inside{
     padding:0;
     width: 230px;
-    height: 300px;
+    height: auto;
     border-radius: 3px;
     margin-bottom: 15px;
     box-shadow: 3px 4px 5px var(--highlight);
@@ -192,6 +192,43 @@ a{
     padding: 2px;
     color: var(--prim-ft-color);
 }
+
+#num_entry, #output{
+    font-weight:500 ;
+    font-size:25px ;
+    margin: 5px;
+    background-color: var(--bg-color2-transp);
+    color: var(--prim-ft-color);
+    border-color: var(--bg-color2-transp);
+    border-radius: 5px;
+}
+
+.operator{
+    width: 40px;
+    height: 40px;
+}
+
+#num_entry{
+    width: 60px;
+    height: 60px;
+}
+#output{
+    width: 135px;
+    height: 60px;
+}
+.display{
+    border-radius: 5px ;
+    margin: 10px;
+    padding: 10px 5px;
+    font-size: 2em;
+    text-align: right;
+    background-color: var(--prim-ft-color);
+    color: var(--bg-color2-transp);
+    height: 60px;
+    width: 90%;
+}
+
+
 
 
 /* footer general layout----------------------------------------------- */

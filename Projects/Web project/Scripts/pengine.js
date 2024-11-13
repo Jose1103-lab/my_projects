@@ -1,6 +1,7 @@
 //my first steps un javascript
 
  let yolo = document.getElementById("mango");
+
  function suma(value1, value2){
      let result = value1 + value2;
      return result;
@@ -22,15 +23,18 @@
      return result;
  }
 
- while(true){
+//  while(true){
      let operator = prompt ("Opertion:\n A) Sum\n B) Subtraction\n C) Multiplication\n D) Division\n E) Exponentiation\n (F) Close");
-     if(operator.toLowerCase() === "f"){break;}
+    //  if(operator.toLowerCase() === "f"){break;}
      let value1 = parseFloat(prompt("First digit:"));
      let value2 = parseFloat(prompt("Second digit:"));
+     let result
      switch(operator.toLowerCase()){
          case "a":             
-         alert(suma(value1, value2));
          if (suma(value1, value2) > 5){
+             result = (suma(value1, value2));
+             display = getElementById("display");
+             display.content = result;
 //something new 
              yolo.style.background= "red"; 
          }
@@ -49,4 +53,4 @@
          default:
              alert("Invalid operation ("+operator.toUpperCase()+")" );
      }
- }
+//  }
