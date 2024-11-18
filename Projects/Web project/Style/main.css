@@ -24,6 +24,7 @@
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 ::-webkit-scrollbar-track {
     background: var(--bg-color1);
@@ -227,8 +228,6 @@ a{
     height: 60px;
     width: 90%;
 }
-
-
 
 
 /* footer general layout----------------------------------------------- */

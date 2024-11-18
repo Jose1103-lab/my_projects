@@ -34,7 +34,8 @@
          if (suma(value1, value2) > 5){
              result = (suma(value1, value2));
              display = getElementById("display");
-             display.content = result;
+             display = result.toString()
+             
 //something new 
              yolo.style.background= "red"; 
          }
