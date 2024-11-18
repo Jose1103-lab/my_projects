@@ -2,54 +2,40 @@
 
  let yolo = document.getElementById("mango");
 
- function suma(value1, value2){
-     let result = value1 + value2;
-     return result;
-    }
- function sustraction(value1, value2){
-     let result = value1 - value2;
-     return result;
-    }
- function multiplication(value1, value2){
-     let result = value1 * value2;
-     return result;
- }
- function division(value1, value2){
-     let result = value1 / value2;
-     return result;
- }
- function exponentiation(value1, value2){
-     let result = value1 ** value2;
-     return result;
- }
+// let sustraction = (value1, value2) => value1 - value2 
+// let division = (value1, value2) => value1 / value2 
+// let multiplication = (value1, value2) => value1 * value2 
+// let exponentiation = (value1, value2) => value1 ** value2 
 
 //  while(true){
      let operator = prompt ("Opertion:\n A) Sum\n B) Subtraction\n C) Multiplication\n D) Division\n E) Exponentiation\n (F) Close");
     //  if(operator.toLowerCase() === "f"){break;}
      let value1 = parseFloat(prompt("First digit:"));
      let value2 = parseFloat(prompt("Second digit:"));
-     let result
+
      switch(operator.toLowerCase()){
          case "a":             
-         if (suma(value1, value2) > 5){
-             result = (suma(value1, value2));
-             display = getElementById("display");
-             display.content = result;
-//something new 
-             yolo.style.background= "red"; 
-         }
-         break;    
+            let suma = (a, b) => value1 + value2
+            yolo.style.background= "red"; 
+            display = getElementById("displayaa");
+            display.textContent= "jhsgfh"
+            // let result = suma
+            alert(suma())
+            if (suma > 5){
+                //something new 
+            }
+            break;    
          case "b":
-             alert(sustraction(value1, value2));
+             alert();
              break;    
          case "c":
-             alert(multiplication(value1, value2));
+             alert();
              break;    
          case "d":
-             alert(division(value1, value2));
+             alert();
              break;    
          case "e":
-             alert(exponentiation(value1, value2));
+             alert();
          default:
              alert("Invalid operation ("+operator.toUpperCase()+")" );
      }
