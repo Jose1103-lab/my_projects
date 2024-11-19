@@ -1,7 +1,5 @@
 //my first steps un javascript
 
- let yolo = document.getElementById("mango");
-
  function suma(value1, value2){
      let result = value1 + value2;
      return result;
@@ -23,35 +21,35 @@
      return result;
  }
 
-//  while(true){
+ while(true){
      let operator = prompt ("Opertion:\n A) Sum\n B) Subtraction\n C) Multiplication\n D) Division\n E) Exponentiation\n (F) Close");
-    //  if(operator.toLowerCase() === "f"){break;}
+     if(operator.toLowerCase() === "f"){break;}
      let value1 = parseFloat(prompt("First digit:"));
      let value2 = parseFloat(prompt("Second digit:"));
+     let display1 = document.getElementById("display");
      let result
+     
      switch(operator.toLowerCase()){
          case "a":             
-         if (suma(value1, value2) > 5){
-             result = (suma(value1, value2));
-             display = getElementById("display");
-             display = result.toString()
-             
-//something new 
-             yolo.style.background= "red"; 
-         }
-         break;    
+            result = suma(value1, value2);
+            break;    
          case "b":
-             alert(sustraction(value1, value2));
-             break;    
+            result = sustraction(value1, value2);
+            break;    
          case "c":
-             alert(multiplication(value1, value2));
+            result = multiplication(value1, value2);
              break;    
          case "d":
-             alert(division(value1, value2));
+             result = division(value1, value2);
              break;    
          case "e":
-             alert(exponentiation(value1, value2));
+             result = exponentiation(value1, value2);
+             break;
          default:
-             alert("Invalid operation ("+operator.toUpperCase()+")" );
-     }
-//  }
+            display1.style.fontSize = "16px";
+            display1.style.color = "red";
+            result = "Invalid operation ("+operator.toUpperCase()+")";
+             
+        }
+        display1.textContent = result;
+}
