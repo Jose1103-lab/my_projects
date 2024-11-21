@@ -16,17 +16,22 @@
 // console.log(retrn)
 
 
-// // Adding more main containers to the main feed
-const add_new_div_container() => return new_container = document.createElement("div");
-const add_new_paragraph() => return new_container = document.createElement("p");
-
+// // Adds a new container to the main feed
+const add_new_div_container = () => new_container = document.createElement("div");
+// // Adds a new title to the container
+// I will add a dropdnwn to select the size of the title
+const add_new_title = () => new_title = document.createElement("h2");
+// // Adds a new paragraph to the container
+const add_new_paragraph = () => new_paragraph = document.createElement("p");
 
 function add_new_feed_content(){
+    //this fuction creates a new element for the main feed of the page
     const new_container = add_new_div_container();
         new_container.setAttribute("class", "mn-inside")
     const new_para = add_new_paragraph();
-    const new_title = document.createElement("h2");
+    const new_title = add_new_title();
     const main_node = document.getElementById("main_feed")
+    //attaching the new elements to the main feed container
     main_node.appendChild(new_container)
     new_container.appendChild(new_title)
     new_container.appendChild(new_para)
@@ -34,10 +39,14 @@ function add_new_feed_content(){
     new_para.textContent = "New biography paragraph"
 }
 
-for(let i=0; i < 10; i++){
+
+for(let i = 0; i < 25; i++){
     add_new_feed_content()
 }
 
+let last_child = document.getElementById("main_feed");//.lastElementChild
+console.log(last_child)
+last_child.lastElementChild.style.backgroundColor = "red";
 
 // const adder = addEventListener("click", () => {...}
 
@@ -49,8 +58,7 @@ for(let i=0; i < 10; i++){
 //      let value2 = parseFloat(prompt("Second digit:"));
 //      let display1 = document.getElementById("display");
 //      let result
-
-     
+ 
 //      switch(operator.toLowerCase()){
 //          case "a": 
 //             let suma = (a, b) => value1 + value2;

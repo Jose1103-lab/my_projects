@@ -1,0 +1,9 @@
+-----Python module
+def palindromo(text:str):
+    text = text.replace(" ", "").lower()
+    return (text == text[::-1])
+
+print(palindromo("reconocer"))
+print(palindromo("Dabale arroz a la zorra el abad"))
+print(palindromo("aluna"))
+-------------------------
