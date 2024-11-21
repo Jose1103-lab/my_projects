@@ -176,10 +176,10 @@ main{
 .inside{
     margin: 5px;
     width: 230px;
-    height: auto;
+    height: fit-content;
     border-radius: 3px;
     margin-bottom: 15px;
-    box-shadow: 3px 4px 5px var(--highlight);
+    box-shadow: 0px 1px 10px var(--bg-color2);
 }
 
 .inside img{

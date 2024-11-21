@@ -30,25 +30,26 @@ function add_new_feed_content(){
         new_container.setAttribute("class", "mn-inside")
     const new_para = add_new_paragraph();
     const new_title = add_new_title();
-    const main_node = document.getElementById("main_feed")
+    const main_node = document.getElementById("main_feed");
     //attaching the new elements to the main feed container
-    main_node.appendChild(new_container)
-    new_container.appendChild(new_title)
-    new_container.appendChild(new_para)
-    new_title.textContent = "New biography"
-    new_para.textContent = "New biography paragraph"
+    main_node.appendChild(new_container);
+    new_container.appendChild(new_title);
+    new_container.appendChild(new_para);
+    new_title.textContent = "New biography";
+    new_para.textContent = "New biography paragraph";
 }
 
+// for(let i = 0; i < 25; i++){
+//     add_new_feed_content()
+// }
 
-for(let i = 0; i < 25; i++){
-    add_new_feed_content()
-}
-
-let last_child = document.getElementById("main_feed");//.lastElementChild
-console.log(last_child)
+let last_child = document.getElementById("main_feed");
 last_child.lastElementChild.style.backgroundColor = "red";
 
-// const adder = addEventListener("click", () => {...}
+const adder = document.getElementById("operator+");
+adder.addEventListener("click", () => {
+    add_new_feed_content()
+});
 
 
 // while(true){
