@@ -118,6 +118,7 @@ main{
     border-radius: 2px;
     display: flex;
     flex-flow: row wrap;
+    align-content: start;
     justify-content: space-around;
 }
 
