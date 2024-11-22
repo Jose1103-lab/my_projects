@@ -1,6 +1,6 @@
 //my first steps un javascript
 
-// // A module that creates a "P" element
+    // A module that creates a "P" element
 // function new_main_post(){
 //    const new_para = document.createElement("p");
 //    const main_node = document.getElementById("main_feed")
@@ -8,20 +8,19 @@
 //    new_para.setAttribute('class', "logo") //♠♠
 //    //♠♠ alert (main_node.parentNode.parentNode)
 //    main_node.appendChild(new_para)
+//return new_para.parentNode //check the current node parent 
+//}
     
-// return new_para.parentNode //check the current node parent 
-// }
-// //check the current node parent 
+    //check the current node parent 
 // let retrn = new_main_post();
 // console.log(retrn)
 
-
-// // Adds a new container to the main feed
+    // Adds a new container to the main feed
 const add_new_div_container = () => new_container = document.createElement("div");
-// // Adds a new title to the container
+    // Adds a new title to the container
 // I will add a dropdnwn to select the size of the title
 const add_new_title = () => new_title = document.createElement("h2");
-// // Adds a new paragraph to the container
+    // Adds a new paragraph to the container
 const add_new_paragraph = () => new_paragraph = document.createElement("p");
 
 function add_new_feed_content(){
@@ -38,20 +37,19 @@ function add_new_feed_content(){
     new_title.textContent = "New biography";
     new_para.textContent = "New biography paragraph";
 }
-
+    // a loop to add more content to the main feed #proof
 // for(let i = 0; i < 25; i++){
 //     add_new_feed_content()
 // }
 
-let last_child = document.getElementById("main_feed");
-last_child.lastElementChild.style.backgroundColor = "red";
+    // add a backgroundColor to all the last child of the main feed 
+// let last_child = document.getElementById("main_feed");
+// last_child.lastElementChild.style.backgroundColor = "red";
 
-const adder = document.getElementById("operator+");
-adder.addEventListener("click", () => {
-    add_new_feed_content()
-});
+    //action added to add more elements using a botton
+let adder = document.getElementById("operator+").addEventListener("click", () => {add_new_feed_content()});
 
-
+    //a loop for a calculator
 // while(true){
 //      let operator = prompt ("Opertion:\n A) Sum\n B) Subtraction\n C) Multiplication\n D) Division\n E) Exponentiation\n (F) Close");
 //      if(operator.toLowerCase() === "f"){break;}

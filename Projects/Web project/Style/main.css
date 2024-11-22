@@ -69,6 +69,7 @@ a{
 
 .tool_var > a:hover {
     color:#8a30e2;
+    border-bottom: 1px solid var(--bg-color2);
     text-shadow:0 0 10px var(--bg-color2);
 }
 
@@ -139,6 +140,7 @@ main{
 }
 
 .home-img{
+    z-index: -1;
     position: relative;
     width: 100%;
     grid-area: 1/1/2/4;
