@@ -23,6 +23,8 @@ const add_new_title = () => new_title = document.createElement("h2");
     // Adds a new paragraph to the container
 const add_new_paragraph = () => new_paragraph = document.createElement("p");
 
+const text = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, necessitatibus officiis nesciunt corrupti tempore sit alias deleniti optio animivero! Voluptates numquam cupiditate cumque amet modi enim quos corrupti molestias, veritatis dolorem, eius soluta delectus adipisci aspernatur, vel sint illum non! Debitis voluptatum accusantium, doloremque soluta minima labore deserunt perspiciatis."
+
 function add_new_feed_content(){
     //this fuction creates a new element for the main feed of the page
     const new_container = add_new_div_container();
@@ -34,8 +36,8 @@ function add_new_feed_content(){
     main_node.appendChild(new_container);
     new_container.appendChild(new_title);
     new_container.appendChild(new_para);
-    new_title.textContent = "New biography";
-    new_para.textContent = "New biography paragraph";
+    new_title.textContent = text;
+    new_para.textContent = text;
 }
     // a loop to add more content to the main feed #proof
 // for(let i = 0; i < 25; i++){
@@ -57,7 +59,7 @@ let adder = document.getElementById("operator+").addEventListener("click", () =>
 //      let value2 = parseFloat(prompt("Second digit:"));
 //      let display1 = document.getElementById("display");
 //      let result
- 
+
 //      switch(operator.toLowerCase()){
 //          case "a": 
 //             let suma = (a, b) => value1 + value2;
